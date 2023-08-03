@@ -76,7 +76,6 @@ function App() {
       <br />
       <br />
       {tenzies && <p>Yay!!!...You WON🎇🎆</p>}
-      <p>hey wise</p>
     </main>
   );
 }
