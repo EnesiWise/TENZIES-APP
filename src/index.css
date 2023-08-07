@@ -60,3 +60,8 @@ button {
   top: 80px;
   cursor: pointer;
 }
+@media screen and (max-width: 500px) {
+  main {
+    margin: 5rem 2rem;
+  }
+}
