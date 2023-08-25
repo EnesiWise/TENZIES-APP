@@ -60,15 +60,16 @@ function App() {
       hold={() => holdDice(die.id)}
     />
   ));
+
   return (
-    <main>
+    <main className="white-container">
       {tenzies && <Confetti />}
       <h1 className="title">Tenzies</h1>
       <p className="instruction">
         Roll until all dice are the same. Click each die to freeze it at its
         current value between rolls.
       </p>
-      <div className="main-div">{mappedDieElement}</div>
+      <div className="main-inner-div">{mappedDieElement}</div>
       <button onClick={rollDice}>{tenzies ? "New Game" : "Roll"}</button>
       <br />
       <br />

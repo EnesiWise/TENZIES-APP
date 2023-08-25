@@ -7,7 +7,7 @@ body {
 }
 main {
   background-color: #f5f5f5;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 500px;
   max-width: 500px;
   padding: 20px;
@@ -31,7 +31,7 @@ main {
   letter-spacing: -0.03em;
   color: #4a4e74;
 }
-.main-div {
+.main-inner-div {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
   gap: 20px;
@@ -45,7 +45,6 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: white;
 }
 button {
   height: 50px;
@@ -60,8 +59,68 @@ button {
   top: 80px;
   cursor: pointer;
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 700px) and (max-width: 950px) {
   main {
-    margin: 5rem 2rem;
+    max-width: 650px;
+    height: 700px;
+    top: 130px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .instruction {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .die-container {
+    height: 60px;
+    width: 60px;
+  }
+  button {
+    height: 70px;
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+  main {
+    max-width: 400px;
+    top: 90px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main {
+    max-width: 250px;
+    top: 70px;
+  }
+
+  .die-container {
+    height: 35px;
+    width: 35px;
+  }
+  .die-container h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  main {
+    max-width: 200px;
+    height: 400px;
+  }
+  .instruction {
+    padding-bottom: 10px;
+  }
+
+  .die-container {
+    height: 30px;
+    width: 28px;
+  }
+  .die-container h1 {
+    font-size: 20px;
+  }
+  button {
+    height: 40px;
+    width: 90px;
   }
 }
